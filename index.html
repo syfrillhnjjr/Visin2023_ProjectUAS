@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project-UASVisin_2115016112</title>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+
+    <!-- <style>
+      body {
+        margin-top: 40px;
+        padding: 0 20px;
+      }
+      .card-header {
+        text-align: justify;
+      }
+    </style> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1">Data Penyebab Kematian Di Indonesia</span>
+    </nav>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">Angka kematian di Indonesia diketahui mengalami peningkatan yang mengkhawatirkan, dengan beberapa faktor yang berkontribusi dalam tren tersebut. Penelitian mendalam mengungkapkan bahwa beberapa penyebab utama kematian disebabkan oleh penyakit menular, gaya hidup yang tidak sehat, serta serangkaian bencana alam.</div>
+                
+
+            <div class="card-body">
+              <div>
+                <iframe 
+                src="https://docs.google.com/spreadsheets/d/1dqRizw0Amb2hUpPkE3CqaxjSQfLf_k9HGg4TPXMMCPQ/edit#gid=163340486"
+                style="width: 100%; height: 350px;"></iframe>            
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Penyebab Kematian di Indonesia</div>
+            <div class="card-body">
+              <canvas id="chart1"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Kematian di Indonesia Berdasarkan Tahun dan Tipe</div>
+            <div class="card-body">
+              <canvas id="chart2"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header"><text-justify>Kedua grafik diatas adalah perbandingan untuk membantu pemahaman visual tentang data yang disajikan. Grafik-grafik ini dirancang agar responsif dan mudah dibaca, sehingga informasi tentang penyebab dan distribusi kematian di Indonesia dapat diakses dengan lebih baik. Semoga data-data ini membantu dalam penilaian dan pengambilan keputusan terkait isu kesehatan dan keselamatan di Indonesia..</text-justify></div>
+            <div class="card-body">
+              <div>
+                <h5>Chart 1: "Penyebab Kematian di Indonesia"</h5>
+                    <p class="text-justify">Menampilkan data yang menggambarkan penyebab kematian berdasarkan jenis penyakit atau faktor lainnya di Indonesia. Grafik ini menggunakan tipe grafik batang (bar) yang mengelompokkan data berdasarkan tahun. Setiap batang mewakili jumlah kematian untuk setiap jenis penyebab yang terjadi pada tahun yang bersangkutan.
+                    
+                        Grafik ini dihasilkan dari data yang diambil dari sumber eksternal menggunakan metode panggilan asinkron melalui fetch API. Data kemudian diproses dan dipecah menjadi baris-baris dan kolom-kolom. Setelah itu, grafik dibentuk dengan menerapkan label untuk sumbu-x (tahun) dan sumbu-y (jumlah kematian) serta warna acak yang diberikan untuk setiap batang. Warna yang berbeda pada setiap batang mewakili jenis penyebab kematian yang berbeda.</p>
+                    
+                <h5>Chart 2: "Kematian di Indonesia Berdasarkan Tahun dan Tipe"</h5>
+                    <p class="text-justify">Menampilkan data kematian di Indonesia berdasarkan tahun dan tipe kematian. Tipe kematian bisa meliputi berbagai kategori seperti penyakit menular, bencana alam, atau faktor lainnya. Grafik ini menggunakan tipe grafik batang (bar) yang juga mengelompokkan data berdasarkan tahun.
+                    
+                        Data grafik ini juga diambil dari sumber eksternal menggunakan metode panggilan asinkron dengan fetch API. Setelah data diproses dan dipecah menjadi baris-baris dan kolom-kolom, grafik dibentuk dengan label untuk sumbu-x (tahun) dan sumbu-y (jumlah kematian). Tiap batang pada grafik mewakili jumlah kematian untuk setiap jenis tipe kematian pada tahun tertentu. Warna yang berbeda pada setiap batang mengindikasikan tipe kematian yang berbeda.
+                        
+                        Kedua grafik ini disertai dengan judul yang jelas untuk membantu pemahaman visual tentang data yang disajikan. Grafik-grafik ini dirancang agar responsif dan mudah dibaca, sehingga informasi tentang penyebab dan distribusi kematian di Indonesia dapat diakses dengan lebih baik. Semoga data-data ini membantu dalam penilaian dan pengambilan keputusan terkait isu kesehatan dan keselamatan di Indonesia.</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- <div id="chart2"></div> -->
+    <!-- Tambahkan lebih banyak elemen div untuk grafik lainnya -->
+  </body>
+</html>
